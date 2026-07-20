@@ -1,6 +1,6 @@
 ---
-name: webuild
-description: AI Campaign Media Kit builder — turns brand context, audience proof, case studies, screenshots, and offer details into a complete premium campaign/media-kit website (Next.js, conversion-focused, SEO-ready, Vercel-deployable). Use when the user says /webuild or asks to build a campaign, sponsorship, media-kit, or creator-partnership website from their brand context.
+name: ai-campaign-media-kit
+description: Turns a creator's brand context, audience proof, case studies, screenshots, and offer details into a complete premium campaign/media-kit website (Next.js, conversion-focused, SEO-ready, Vercel-deployable). Use when the user asks to build a campaign, sponsorship, media-kit, or creator-partnership website from their brand context.
 ---
 
 # AI Campaign Media Kit Skill
@@ -330,3 +330,13 @@ Prepare the site for:
 ## Existing-site guard
 
 If the working repository already contains a launched or approved site, do not rebuild or overwrite it. Run a gap audit against the required pages and sections above, report what is missing, and get the owner's approval before making major changes.
+
+## Using this repo's supporting files
+
+When this skill is used from the full repo (not just this file), lean on the supporting directories:
+
+- `SOUL.md` — the non-negotiable philosophy behind every decision. Read it first.
+- `prompts/` — a numbered, step-by-step prompt sequence (intake → setup → pages → SEO → polish → deploy). Follow it in order for a full build.
+- `templates/` — intake forms, data-file skeletons, and the launch-review scorecard. Fill these instead of inventing structures.
+- `knowledge/` — the rules for conversion, design, copywriting, SEO, media quality, responsiveness, funnel, and deployment. These override generic instincts.
+- `examples/` — a fully fictional brand (NeuralLaunch) showing what good filled-in inputs and outputs look like. Never copy its numbers or claims into a real build.
